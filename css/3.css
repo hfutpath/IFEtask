@@ -1,0 +1,65 @@
+/*格式清空*/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin: 0;padding: 0;border: 0;}
+body{font-size: 12px;}
+img{border: none;}
+input,select,textarea{outline: none;}
+textarea{resize:none;}
+a{text-decoration: none;}
+/*本文件样式*/
+p{
+  text-indent: 24px;
+}
+.container{
+  float: left;
+ /*为了让父级与自己处于同层上，这样可以被子集撑开*/
+  background-color: #eee;
+  border: 2px solid #999;
+  margin: 20px;
+  padding: 20px;
+
+}
+.mainBox{
+  float: left;
+  width: 100%;
+}
+.mainBox .content{
+
+  margin: 0 140px 0 220px;
+  padding: 20px;
+  border: 2px solid #999;
+  background-color: #fff;
+  line-height: 20px;
+
+}
+.mainBox .content h1{
+  text-align: center;
+  text-indent: 0;
+}
+.mainBox .content li{
+  margin-left: 16px;
+}
+.subMainBox{
+  float: left;
+  width: 156px;
+  margin-left: -100%;
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #999;
+  font-size: 16px;
+}
+.subMainBox img{
+  float: left;
+  margin-right: 20px;
+
+}
+.sideBox{
+  float: left;
+  width: 76px;
+  margin-left:-120px;
+  padding: 20px;
+  border: 2px solid #999;
+  background-color: #fff;
+}
+.sideBox #div1,#div2,#div3{
+  margin-bottom: 0;
+}
