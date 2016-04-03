@@ -1,17 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>三栏式布局</title>
+<style type="text/css">
 /*格式清空*/
 body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin: 0;padding: 0;border: 0;}
-body{font-size: 20px;}
+body{font-size: 12px;}
 img{border: none;}
+ul,ol{list-style: none;}
 input,select,textarea{outline: none;}
 textarea{resize:none;}
 a{text-decoration: none;}
-/*本文件样式*/
-  p{
-    text-indent: 24px;
+
+
+
+  body{
+
   }
   .container{
     float: left;
    /*为了让父级与自己处于同层上，这样可以被子集撑开*/
+    overflow: hidden;
+    text-align: center;
     background-color: #eee;
     border: 2px solid #999;
     margin: 20px;
@@ -27,15 +38,7 @@ a{text-decoration: none;}
     padding: 20px;
     border: 2px solid #999;
     background-color: #fff;
-    line-height: 30px;
-
-  }
-  .mainBox .content h1{
-    text-align: center;
-    text-indent: 0;
-  }
-  .mainBox .content li{
-    margin-left: 16px;
+    line-height: 20px
   }
   .subMainBox{
     float: left;
@@ -59,10 +62,39 @@ a{text-decoration: none;}
     border: 2px solid #999;
     background-color: #fff;
   }
-  .sideBox #div1,#div2,#div3,#div4{
-    width: 80px;
-    height: 80px;
-  }
   .sideBox #div1,#div2,#div3{
     margin-bottom: 20px;
   }
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="mainBox">
+      <div class="content">
+<h1>1、设置元素的宽度不包括padding值和margin值。</h1>
+
+
+      </div>
+    </div>
+    <div class="subMainBox">
+      <img src="images/灯塔.jpg" alt=""><strong>智能设</strong>
+    </div>
+    <div class="sideBox">
+      <div id="div1">
+        <img src="images/灯塔.jpg" alt="">
+      </div>
+      <div id="div2">
+        <img src="images/灯塔.jpg" alt="">
+      </div>
+      <div id="div3">
+        <img src="images/灯塔.jpg" alt="">
+      </div>
+      <div id="div4">
+        <img src="images/灯塔.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
